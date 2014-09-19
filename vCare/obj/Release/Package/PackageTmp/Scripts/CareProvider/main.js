@@ -31,6 +31,6 @@
         }
     };
     //makes the call
-    //session = userAgent.invite('sip:helios@vcare.onsip.com', options); 
-    session = userAgent.invite('sip:phoenix@vcare.onsip.com', options);
+    //session = userAgent.invite('sip:1@vcare.onsip.com', options);  
+    session = userAgent.invite('sip:2@vcare.onsip.com', options);
 })();
