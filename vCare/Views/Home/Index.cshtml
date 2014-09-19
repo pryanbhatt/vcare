@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h1>Welcome to vCare - A free service to help you keep an eye on your loved ones. </h1>
+
+Current time: Server is @DateTime.UtcNow
+
+<br /><br />
+
+Current time: Central Zone is @ViewBag.TimeNow
+
+<br /><br /><br />
+
+<button class="btn btn-info btn-large" onclick="location.href='@Url.Action("Index", "cpMain")'"><i class="icon-white icon-user"></i> You are the care provider</button>
+
+<br /><br /><br />
+
+<button class="btn btn-info btn-large" onclick="location.href='@Url.Action("Index", "crMain")'"><i class="icon-white icon-user"></i> You are being cared for</button>
+
