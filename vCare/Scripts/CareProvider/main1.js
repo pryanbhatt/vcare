@@ -1,26 +1,20 @@
 ﻿// main.js
-function call(device) {
-    var session1;
-    var session2;
+function callDevice(dev) {
+    var session;
 
     var endButton = document.getElementById('endCall');
     endButton.addEventListener("click", function () {
-        session1.bye();
-        session2.bye();
+        session.bye();
         alert("Call Ended");
     }, false);
 
     //Creates the anonymous user agent so that you can make calls
-    var userAgent1 = new SIP.UA({
-        traceSip: true
-    });
-
-    var userAgent2 = new SIP.UA({
+    var userAgent = new SIP.UA({
         traceSip: true
     });
 
     //here you determine whether the call has video and audio
-    var options1 = {
+    var options = {
         media: {
             constraints: {
                 audio: true,
@@ -36,27 +30,7 @@ function call(device) {
             }
         }
     };
-
-    var options2 = {
-        media: {
-            constraints: {
-                audio: true,
-                video: true
-            },
-            render: {
-                remote: {
-                    video: document.getElementById('remoteVideo1')
-                },
-                local: {
-                    video: document.getElementById('localVideo1')
-                }
-            }
-        }
-    };
     //makes the call
-    //session = userAgent.invite('sip:1@vcare.onsip.com', options);
-    session = userAgent1.invite('sip:1@vcare.onsip.com', options1);
-    session = userAgent2.invite('sip:2@vcare.onsip.com', options2);
-
+    //session = userAgent.invite('sip:helios@vcare.onsip.com', options); // 
+    session = userAgent.invite('sip:' + device + '@vcare.onsip.com', options);
 }
-
