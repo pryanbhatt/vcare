@@ -11,10 +11,17 @@
 
     <br /><br /><br />
 
-    <video id="remoteVideo"></video>
-    <video id="localVideo" muted="muted"></video>
-    <script src="~/Scripts/sip-0.6.2.js"></script>
-    <script src="~/Scripts/CareRecepient/main.js"></script>
+    <button class="btn btn-info btn-large" onclick="location.href='@Url.Action("CalledDevice", new { devid = 1 })'"><i class="icon-white icon-user"></i> Set as Device 1</button>
+    <button class="btn btn-info btn-large" onclick="location.href='@Url.Action("CalledDevice", new { devid = 2 })'"><i class="icon-white icon-user"></i> Set as Device 2</button>
+
+    <!--
+        <video id="remoteVideo"></video>
+        <video id="localVideo" muted="muted"></video>
+        <script src="~/Scripts/sip-0.6.2.js"></script>
+        <script src="~/Scripts/CareRecepient/main.js"></script>
+
+    -->
+    
 </body>
 
 </html>

@@ -4,10 +4,10 @@
     //user agent configuration
     var configuration = {
         wsServers: 'wss://edge.sip.onsip.com',
-        uri: 'phoenix@vcare.onsip.com',//'helios@vcare.onsip.com',
-        authorizationUser: 'Phoenix',//'Helios',
-        password: 'Phoenix', //'Helios',
-        displayName: 'Phoenix' //'Helios'
+        uri: '1@vcare.onsip.com',//'helios@vcare.onsip.com',
+        authorizationUser: '1',//'Helios',
+        password: '1', //'Helios',
+        displayName: '1' //'Helios'
     };
 
     var userAgent = new SIP.UA(configuration);

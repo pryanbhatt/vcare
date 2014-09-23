@@ -14,5 +14,11 @@ namespace vCare.Controllers
             return View();
         }
 
+        public ActionResult CalledDevice(int devid)
+        {
+            ViewBag.dev = devid;
+            return View();
+        }
+
     }
 }

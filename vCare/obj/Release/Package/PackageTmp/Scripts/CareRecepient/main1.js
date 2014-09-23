@@ -1,13 +1,13 @@
 ﻿// main.js
-function setup(camera) {
+function called(dev) {
     var session;
     //user agent configuration
     var configuration = {
         wsServers: 'wss://edge.sip.onsip.com',
-        uri: camera + '@vcare.onsip.com',//'helios@vcare.onsip.com',
-        authorizationUser: camera,//'Helios',
-        password: camera, //'Helios',
-        displayName: camera //'Helios'
+        uri: dev + '@vcare.onsip.com',//'helios@vcare.onsip.com',
+        authorizationUser: dev,//'Helios',
+        password: dev, //'Helios',
+        displayName: dev //'Helios'
     };
 
     var userAgent = new SIP.UA(configuration);

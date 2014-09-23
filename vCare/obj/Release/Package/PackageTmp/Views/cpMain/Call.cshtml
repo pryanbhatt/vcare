@@ -9,14 +9,17 @@
 
     <br /><br /><br />
 
+    <!--
     <video id="remoteVideo"></video>
     <video id="localVideo" muted="muted"></video>
-    <video id="remoteVideo1"></video>
-    <video id="localVideo1" muted="muted"></video>
     <button id="endCall">End Call</button>
     <script src="~/Scripts/sip-0.6.2.js"></script>
-    <script src="~/Scripts/CareProvider/main1.js"></script>
+    <script src="~/Scripts/CareProvider/main.js"></script>
+    -->
 
+    <button class="btn btn-info btn-large" onclick="location.href='@Url.Action("CallParticularDevice", new { devid = 1 })'"><i class="icon-white icon-user"></i> Device 1</button>
+    <button class="btn btn-info btn-large" onclick="location.href='@Url.Action("CallParticularDevice", new { devid = 2 })'"><i class="icon-white icon-user"></i> Device 2</button>
+    
 </body>
 
 </html>

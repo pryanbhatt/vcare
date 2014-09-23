@@ -91,7 +91,9 @@
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\CareProvider\main.js" />
+    <Content Include="Scripts\CareProvider\main1.js" />
     <Content Include="Scripts\CareRecepient\main.js" />
+    <Content Include="Scripts\CareRecepient\main1.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
@@ -122,6 +124,8 @@
     <Content Include="Views\cpMain\Index.cshtml" />
     <Content Include="Views\crMain\Index.cshtml" />
     <Content Include="Views\cpMain\Call.cshtml" />
+    <Content Include="Views\cpMain\CallParticularDevice.cshtml" />
+    <Content Include="Views\crMain\CalledDevice.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

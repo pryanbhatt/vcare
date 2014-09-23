@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "CalledDevice";
+}
+
+<h2>CalledDevice</h2>
+
+<h2>Set as Device: @ViewBag.dev </h2>
+
+
+<head>
+    <link rel="stylesheet" href="~/Content/CareRecepient/style-cr.css">
+</head>
+
+<br /><br />
+
+<video id="remoteVideo"></video>
+<video id="localVideo" muted="muted"></video>
+<script src="~/Scripts/sip-0.6.2.js"></script>
+<script src="~/Scripts/CareRecepient/main1.js"></script>
+
+<script>
+    called(@ViewBag.dev);
+</script>
+
+
+
