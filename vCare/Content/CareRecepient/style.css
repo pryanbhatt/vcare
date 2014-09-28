@@ -1,0 +1,16 @@
+﻿video {
+    border: 1px solid lightgrey;
+    display: block;
+    height: 30%;
+}
+#remotes {
+    position: absolute;
+    top: 22em;
+    bottom: 2em;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid #b0bee0;
+    border-bottom: 1px solid #b0bee0;
+    min-height: 20em;
+    overflow: auto;
+}

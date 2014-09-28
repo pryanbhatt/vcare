@@ -1,16 +1,23 @@
 ﻿
 @{
-    ViewBag.Title = "CallParticularDevice";
+    ViewBag.Title = "CallAllDevices";
 }
 
-<h2>Device: @ViewBag.dev being called. </h2>
+<head>
+    <link rel="stylesheet" href="~/Content/CareProvider/style-cp.css">
+</head>
+
+<h2>All Devices being called</h2>
 
 <video id="remoteVideo"></video>
 <video id="localVideo" muted="muted"></video>
 <button id="endCall">End Call</button>
+
 <script src="~/Scripts/sip-0.6.2.js"></script>
 <script src="~/Scripts/CareProvider/main2.js"></script>
 <script>
-    callDevice(@ViewBag.dev);
+    callDevice();
 </script>
+
+
 
